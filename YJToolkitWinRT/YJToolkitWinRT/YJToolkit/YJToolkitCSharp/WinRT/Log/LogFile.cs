@@ -5,7 +5,7 @@ using YJToolkit.YJToolkitCSharp.Storage;
 
 namespace YJToolkit.YJToolkitCSharp.Log
 {
-    class LogFile
+    public class LogFile
     {
         public static async Task WriteNewLogAsync(StorageFile file, StorageFolder folder, string fileName, string logString)
         {

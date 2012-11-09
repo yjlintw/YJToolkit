@@ -1,38 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.IO;
 using System.Threading.Tasks;
 using Windows.Storage;
-using System.IO;
+using YJToolkit.YJToolkitCSharp.Storage;
 
 namespace YJToolkit.YJToolkitCSharp.IP
 {
     public static class IPSetUp
     {
-
-        private static async Task<StorageFile> DoesFileExistAsync(StorageFolder folder, string fileName)
-        {
-            StorageFile file = null;
-            try
-            {
-                file = await folder.GetFileAsync(fileName);
-                return file;
-            }
-            catch
-            {
-                return file;
-            }
-        }
-
         public static async Task<StorageFile> SetIPSettingsFile(StorageFolder folder, string fileName)
         {
-            StorageFile file = await DoesFileExistAsync(folder, fileName);
-            if (file == null)
-            {
-                file = await folder.CreateFileAsync(fileName);
-            }
-            return file;
+            return await FileUtil.SetFile(folder, fileName);
         }
 
         public static async void WriteIPSettingsAsync(StorageFile file, string ipString)

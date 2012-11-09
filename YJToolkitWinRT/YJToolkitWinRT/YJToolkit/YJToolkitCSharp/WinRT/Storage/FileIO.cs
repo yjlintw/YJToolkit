@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 
-namespace YJToolkit.YJToolkitCSharp.Log
+namespace YJToolkit.YJToolkitCSharp.Storage
 {
-    class LogFile
+    public class FileUtil
     {
-        private static async Task<bool> DoesFileExistAsync(StorageFile file, StorageFolder folder, string fileName)
+        public static async Task<bool> DoesFileExistAsync(StorageFile file, StorageFolder folder, string fileName)
         {
             try
             {
@@ -22,14 +19,14 @@ namespace YJToolkit.YJToolkitCSharp.Log
             }
         }
 
-        public static async Task WriteNewLogAsync(StorageFile file, StorageFolder folder, string fileName, string logString)
+        public static async Task<StorageFile> SetFile(StorageFolder folder, string fileName)
         {
+            StorageFile file = null;
             if (!(await DoesFileExistAsync(file, folder, fileName)))
             {
                 file = await folder.CreateFileAsync(fileName);
             }
-
-            await FileIO.AppendTextAsync(file, logString + Environment.NewLine);
+            return file;
         }
     }
 }

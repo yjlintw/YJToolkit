@@ -111,17 +111,20 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\Shared\Networking\Http.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\Shared\Networking\HttpGetRequest.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\Shared\Networking\HttpPostFile.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\Shared\Networking\HttpPostRequest.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\Shared\Networking\HttpResponse.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\WinRT\Camera\CameraUtil.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\WinRT\Convert\FileConvert.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\WinRT\Convert\TimeConvert.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\WinRT\IP\IPSetUp.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\WinRT\Log\LogFile.cs" />
-    <Compile Include="YJToolkit\YJTooklitCSharp\WinRT\Text\TextCheck.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\Http.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\HttpGetRequest.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\HttpPostFile.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\HttpPostRequest.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\HttpResponse.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Camera\CameraUtil.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Camera\SetCameraUtil.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Convert\FileConvert.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Convert\TimeConvert.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\IP\IpLogData.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\IP\IPSetUp.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Log\LogFile.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Storage\FileIO.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Text\TextCheck.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

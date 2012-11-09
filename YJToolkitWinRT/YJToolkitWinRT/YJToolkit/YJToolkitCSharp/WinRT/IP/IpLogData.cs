@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.Storage;
+﻿using Windows.Storage;
 
-namespace YJToolkit.YJTooklitCSharp.IP
+namespace YJToolkit.YJToolkitCSharp.IP
 {
     public class IpLogData
     {

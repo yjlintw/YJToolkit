@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>YUJEN</Machine>
+    <WindowsUser>YujenLin</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>2986EA1D8DB801C8473A92874E2443BC00990A716AFE5E1C4652C69CAF2F03C2</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>9989155a-18ac-4b76-8a21-19a9fb7fc70d_1.0.0.0_neutral__jvmh887xc6jqg</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>9989155a-18ac-4b76-8a21-19a9fb7fc70d_jvmh887xc6jqg!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>9989155a-18ac-4b76-8a21-19a9fb7fc70d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=peace_000</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-11-08T07:05:32.773</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\bin\Debug\YJToolkitWinRT.exe">
+      <PackagePath>YJToolkitWinRT.exe</PackagePath>
+      <Modified>2012-11-08T11:10:14.587</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\bin\Debug\YJToolkitWinRT.pdb">
+      <PackagePath>YJToolkitWinRT.pdb</PackagePath>
+      <Modified>2012-11-08T11:10:14.568</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T03:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-11-07T03:54:44.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T23:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2012-11-07T03:54:44.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\YujenLin\Desktop\P284\YJToolkitWinRT\YJToolkitWinRT\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-11-08T07:05:32.718</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

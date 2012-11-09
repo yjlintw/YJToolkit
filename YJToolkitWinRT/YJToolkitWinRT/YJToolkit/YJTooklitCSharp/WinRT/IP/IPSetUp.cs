@@ -8,63 +8,40 @@ using System.IO;
 
 namespace YJToolkit.YJToolkitCSharp.IP
 {
-    class IPSetUp
+    public static class IPSetUp
     {
-        static readonly IPSetUp _instance = new IPSetUp();
-        private string ipSetFileName = "ServerIP.txt";
-        private StorageFolder ipFolder = KnownFolders.DocumentsLibrary;
-        private StorageFile ipFile = null;
 
-        public string ipString = string.Empty;
-
-        private IPSetUp()
+        private static async Task<StorageFile> DoesFileExistAsync(StorageFolder folder, string fileName)
         {
-            init();
-        }
-
-        private async void init()
-        {
-            await SetIPSettingsFile(ipSetFileName);
-            await ReadIPSettingsAsync();
-        }
-
-        public static IPSetUp Instance
-        {
-            get
-            {
-                return _instance;
-            }
-        }
-
-        private async Task<bool> DoesFileExistAsync(string fileName)
-        {
+            StorageFile file = null;
             try
             {
-                ipFile = await ipFolder.GetFileAsync(fileName);
-                return true;
+                file = await folder.GetFileAsync(fileName);
+                return file;
             }
             catch
             {
-                return false;
+                return file;
             }
         }
 
-        private async Task SetIPSettingsFile(string fileName)
+        public static async Task<StorageFile> SetIPSettingsFile(StorageFolder folder, string fileName)
         {
-            if (!(await DoesFileExistAsync(fileName)))
+            StorageFile file = await DoesFileExistAsync(folder, fileName);
+            if (file == null)
             {
-                ipFile = await ipFolder.CreateFileAsync(fileName);
+                file = await folder.CreateFileAsync(fileName);
             }
-            return;
+            return file;
         }
 
-        public async void WriteIPSettingsAsync()
+        public static async void WriteIPSettingsAsync(StorageFile file, string ipString)
         {
             try
             {
-                if (ipFile != null)
+                if (file != null)
                 {
-                    await FileIO.WriteTextAsync(ipFile, ipString);
+                    await FileIO.WriteTextAsync(file, ipString);
                 }
             }
             catch (FileNotFoundException)
@@ -73,22 +50,21 @@ namespace YJToolkit.YJToolkitCSharp.IP
             }
         }
 
-        public async Task ReadIPSettingsAsync()
+        public static async Task<string> ReadIPSettingsAsync(StorageFile file)
         {
+            string result = string.Empty;
             try
             {
-                if (ipFile != null)
+                if (file != null)
                 {
-                    ipString = await FileIO.ReadTextAsync(ipFile);
+                    result = await FileIO.ReadTextAsync(file);
                 }
+                return result;
             }
             catch (FileNotFoundException)
             {
-
+                return result;
             }
-
-            return;
-
         }
     }
 }

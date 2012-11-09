@@ -9,7 +9,7 @@ namespace YJToolkit.YJToolkitCSharp.Text
 {
     class TextCheck
     {
-        public static bool EmailTests(string email)
+        public static bool EmailCheck(string email)
         {
             string pattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
                 + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)"

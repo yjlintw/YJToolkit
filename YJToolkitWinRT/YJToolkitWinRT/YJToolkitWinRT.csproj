@@ -111,11 +111,11 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\Http.cs" />
-    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\HttpGetRequest.cs" />
-    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\HttpPostFile.cs" />
-    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\HttpPostRequest.cs" />
-    <Compile Include="YJToolkit\YJToolkitCSharp\Shared\Networking\HttpResponse.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Networking\Http.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Networking\HttpGetRequest.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Networking\HttpPostFile.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Networking\HttpPostRequest.cs" />
+    <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Networking\HttpResponse.cs" />
     <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Camera\CameraUtil.cs" />
     <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Camera\SetCameraUtil.cs" />
     <Compile Include="YJToolkit\YJToolkitCSharp\WinRT\Convert\FileConvert.cs" />
